@@ -10,6 +10,7 @@ Vagrant.configure("2") do |config|
 
   # Box Update
   config.vm.box_check_update = false
+  config.vbguest.auto_update = true 
 
   # Port Forwarding
   config.vm.network "forwarded_port", guest: 80, host: 8080
