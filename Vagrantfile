@@ -10,10 +10,14 @@ Vagrant.configure("2") do |config|
 
   # Box Update
   config.vm.box_check_update = false
-  config.vbguest.auto_update = false 
+  config.vbguest.auto_update = false
 
   # Port Forwarding
   config.vm.network "forwarded_port", guest: 80, host: 8080
+
+  #Provisioning
+  config.vm.provision "file", source: "~/Projects/files/git-config", destination: "~/.gitconfig"
+  config.vm.provision "shell", path: "~/Projects/scripts/lampstack.sh"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine and only allow access
