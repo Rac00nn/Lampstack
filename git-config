@@ -1,11 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
-#	name = Djagoo
-#	email = Django@Daedalus.local
-[user]
-	name = Django
-	email = django@5ives.com
+	name = Djin
+	email = djin@evoocorp.com
 #[filter "lfs"]
 #	clean = git-lfs clean %f
 #	smudge = git-lfs smudge %f
