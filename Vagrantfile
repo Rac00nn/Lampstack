@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   config.vbguest.auto_update = false
 
   # Port Forwarding
-  config.vm.network "forwarded_port", guest: 80, host: 8080
+  config.vm.network "forwarded_port", guest: 80, host: 1234
 
   #Provisioning
   config.vm.provision "file", source: "~/Projects/files/git-config", destination: "~/.gitconfig"
